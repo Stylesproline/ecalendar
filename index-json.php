@@ -10,18 +10,18 @@
     <meta name="author" content="">
 
     <title>Bare - Start Bootstrap Template</title>
-	
+
 	<!-- FullCalendar -->
 	<link href='css/fullcalendar.min.css' rel='stylesheet' />
     <!-- Bootstrap Core CSS -->
-	
+
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
 
 
     <!-- Custom CSS -->
-    
+
 	 <style>
-    
+
 	#calendar {
 		max-width: 1200px;
 	}
@@ -45,7 +45,7 @@
     padding: 10px;
     display: table-cell;
 }
-	
+
 	  #calendar a.fc-event {
   color: #fff; /* bootstrap default styles make it black. undo */
   background-color: #0065A6;
@@ -73,7 +73,7 @@
                 <div id="calendar" class="col-centered">
                 </div>
             </div>
-			
+
         </div>
         <!-- /.row -->
 		<!-- Modal -->
@@ -81,37 +81,37 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
      <form class="form-horizontal" method="POST" action="addEvent-json.php">
-			
+
 			  <div class="modal-header">
-			  <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+			  <h4 class="modal-title" id="myModalLabel">Добавить</h4>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			  </div>
 			  <div class="modal-body">
-				
+
 				  <div class="form-group">
-					<label for="title" class="col-sm-2 control-label">Title</label>
+					<label for="title" class="col-sm-2 control-label">скидка</label>
 					<div class="col-sm-10">
 					  <input type="text" name="title" class="form-control" id="title" placeholder="Title">
 					</div>
 				  </div>
 				  <div class="form-group">
-					<label for="description" class="col-sm-2 control-label">Description</label>
+					<label for="description" class="col-sm-2 control-label">услуга</label>
 					<div class="col-sm-10">
 					  <input type="text" name="description" class="form-control" id="description" placeholder="Description">
 					</div>
 				  </div>
 				  <div class="form-group">
-					<label for="color" class="col-sm-2 control-label">Color</label>
+					<label for="color" class="col-sm-2 control-label">выделить</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; Dark blue</option>
-						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Turquoise</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Green</option>						  
-						  <option style="color:#FFD700;" value="#FFD700">&#9724; Yellow</option>
-						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Orange</option>
-						  <option style="color:#FF0000;" value="#FF0000">&#9724; Red</option>
-						  <option style="color:#000;" value="#000">&#9724; Black</option>
-						  
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; Темно-синий</option>
+						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>
+						  <option style="color:#FFD700;" value="#FFD700">&#9724; Желтый</option>
+						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; оранжевый</option>
+						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
+						  <option style="color:#000;" value="#000">&#9724; Черный</option>
+
 						</select>
 					</div>
 				  </div>
@@ -140,7 +140,7 @@
     </div>
   </div>
 </div>
-		
+
 		<!-- Modal -->
 <div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -151,35 +151,35 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			  </div>
 			  <div class="modal-body">
-				
+
 				  <div class="form-group">
 					<label for="title" class="col-sm-2 control-label">Title</label>
 					<div class="col-sm-10">
-					  <input type="text" name="title" class="form-control" id="title" placeholder="Title">
+					  <input type="text" name="title" class="form-control" id="title" placeholder="Ti">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="description" class="col-sm-2 control-label">Description</label>
 					<div class="col-sm-10">
-					  <input type="text" name="description" class="form-control" id="description" placeholder="Description">
+					  <input type="text" name="description" class="form-control" id="description" placeholder="Desc">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="color" class="col-sm-2 control-label">Color</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; Dark blue</option>
-						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Turquoise</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Green</option>						  
-						  <option style="color:#FFD700;" value="#FFD700">&#9724; Yellow</option>
-						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Orange</option>
-						  <option style="color:#FF0000;" value="#FF0000">&#9724; Red</option>
-						  <option style="color:#000;" value="#000">&#9724; Black</option>
-						  
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; Темно-синий</option>
+						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>
+						  <option style="color:#FFD700;" value="#FFD700">&#9724; Желтый</option>
+						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; оранжевый</option>
+						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
+						  <option style="color:#000;" value="#000">&#9724; Черный</option>
+
 						</select>
 					</div>
 				  </div>
-				    <div class="form-group"> 
+				    <div class="form-group">
 						<div class="col-sm-2">
 						  <label onclick="toggleCheck('check1');" class="label-off" for="check1" id="check1_label">
 						  Delete
@@ -196,11 +196,11 @@
 							$('#'+check+'_label').addClass('label-on');
 							$('#'+check+'_label').removeClass('label-off');
 						}
-					}		  
+					}
 					</script>
 				  <input type="hidden" name="id" class="form-control" id="id">
-				
-				
+
+
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -221,17 +221,17 @@
   src="https://code.jquery.com/jquery-1.9.1.min.js"
   integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
   crossorigin="anonymous"></script>
-	
+
 	<!-- FullCalendar -->
 	<script src='js/fullcalendar.min.js'></script>
-	
+
 	 <!-- Bootstrap Core JavaScript -->
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
-	
-	
+
+
 	<script>
 	 $(function() {
-		
+
 		$('#calendar').fullCalendar({
 			header: {
 				left: 'prev,next, today',
@@ -255,7 +255,7 @@
 			selectable: true,
 			selectHelper: true,
 			select: function(start, end) {
-				
+
 				$('#ModalAdd #start').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
 				$('#ModalAdd #end').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
 				$('#ModalAdd').modal('show');
@@ -274,7 +274,7 @@
 				}
 			request.send();
 			},
-	
+
 			eventRender: function(event, element) {
 				element.bind('dblclick', function() {
 					$('#ModalEdit #id').val(event.id);
@@ -304,7 +304,7 @@
 			$('#loading').toggle(bool);
 		  }
 		});
-		
+
 		function edit(event){
 			start = event.start.format('YYYY-MM-DD HH:mm:ss');
 			if(event.end){
@@ -312,14 +312,14 @@
 			}else{
 				end = start;
 			}
-			
+
 			id =  event.id;
-			
+
 			Event = [];
 			Event[0] = id;
 			Event[1] = start;
 			Event[2] = end;
-			
+
 			$.ajax({
 			 url: 'editEventDate-json.php',
 			 type: "POST",
@@ -329,11 +329,21 @@
 				}
 			});
 		}
-		
+
 	});
 
 </script>
+<script src='js/locale/ru.js'></script>
+<script>
 
+  $(function() {
+
+    $('#calendar').fullCalendar({
+    });
+
+  });
+
+</script>
 </body>
 
 </html>

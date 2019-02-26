@@ -23,18 +23,18 @@ $events = $req->fetchAll();
     <meta name="author" content="">
 
     <title>календарь</title>
-	
+
 	<!-- FullCalendar -->
 	<link href='css/fullcalendar.min.css' rel='stylesheet' />
     <!-- Bootstrap Core CSS -->
-	
+
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
 
 
     <!-- Custom CSS -->
-    
+
 	 <style>
-    
+
 	#calendar {
 		max-width: 1200px;
 	}
@@ -44,21 +44,21 @@ $events = $req->fetchAll();
 
 .label-on {
     border-radius: 3px;
-    background: Красный;
+    background: red;
     color: #ffffff;
     padding: 10px;
-    border: 1px solid Красный;
+    border: 1px solid red;
     display: table-cell;
 }
 
 .label-off {
     border-radius: 3px;
     background: white;
-    border: 1px solid Красный;
+    border: 1px solid red;
     padding: 10px;
     display: table-cell;
 }
-	
+
 	  #calendar a.fc-event {
   color: #fff; /* bootstrap default styles make it black. undo */
   background-color: #0065A6;
@@ -86,7 +86,7 @@ $events = $req->fetchAll();
                 <div id="calendar" class="col-centeКрасный">
                 </div>
             </div>
-			
+
         </div>
         <!-- /.row -->
 		<!-- Modal -->
@@ -94,13 +94,13 @@ $events = $req->fetchAll();
   <div class="modal-dialog" role="document">
     <div class="modal-content">
      <form class="form-horizontal" method="POST" action="addEvent.php">
-			
+
 			  <div class="modal-header">
-			  <h4 class="modal-title" id="myModalLabel"></h4>
+			  <h4 class="modal-title" id="myModalLabel">Добавить</h4>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			  </div>
 			  <div class="modal-body">
-				
+
 				  <div class="form-group">
 					<label for="title" class="col-sm-2 control-label">скидка</label>
 					<div class="col-sm-10">
@@ -117,14 +117,14 @@ $events = $req->fetchAll();
 					<label for="color" class="col-sm-2 control-label">выделить</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; темно-синий</option>
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; Темно-синий</option>
 						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>						  
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>
 						  <option style="color:#FFD700;" value="#FFD700">&#9724; Зеленый</option>
 						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Оранжевый</option>
 						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
-						  <option style="color:#000;" value="#000">&#9724; Black</option>
-						  
+						  <option style="color:#000;" value="#000">&#9724; Черный</option>
+
 						</select>
 					</div>
 				  </div>
@@ -153,7 +153,7 @@ $events = $req->fetchAll();
     </div>
   </div>
 </div>
-		
+
 		<!-- Modal -->
 <div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -165,7 +165,7 @@ $events = $req->fetchAll();
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			  </div>
 			  <div class="modal-body">
-				
+
 				  <div class="form-group">
 					<label for="title" class="col-sm-2 control-label">название</label>
 					<div class="col-sm-10">
@@ -182,18 +182,18 @@ $events = $req->fetchAll();
 					<label for="color" class="col-sm-2 control-label">Color</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; темно-синий</option>
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; Темно-синий</option>
 						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Зеленый </option>						  
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>
 						  <option style="color:#FFD700;" value="#FFD700">&#9724; Желтый</option>
 						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; оранжевый</option>
 						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
-						  <option style="color:#000;" value="#000">&#9724; черный</option>
-						  
+						  <option style="color:#000;" value="#000">&#9724; Черный</option>
+
 						</select>
 					</div>
 				  </div>
-				    <div class="form-group"> 
+				    <div class="form-group">
 						<div class="col-sm-2">
 						  <label onclick="toggleCheck('check1');" class="label-off" for="check1" id="check1_label">
 						  удалить
@@ -210,11 +210,11 @@ $events = $req->fetchAll();
 							$('#'+check+'_label').addClass('label-on');
 							$('#'+check+'_label').removeClass('label-off');
 						}
-					}		  
+					}
 					</script>
 				  <input type="hidden" name="id" class="form-control" id="id">
-				
-				
+
+
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">закрыть</button>
@@ -235,18 +235,18 @@ $events = $req->fetchAll();
   src="https://code.jquery.com/jquery-1.9.1.min.js"
   integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
   crossorigin="anonymous"></script>
-	
+
 	<!-- FullCalendar -->
 	<script src='js/fullcalendar.min.js'></script>
-	
+
 	 <!-- Bootstrap Core JavaScript -->
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
-	
-	
+
+
 	<script>
 
 	 $(function() {
-		
+
 		$('#calendar').fullCalendar({
 			header: {
 				left: 'prev,next, today',
@@ -270,7 +270,7 @@ $events = $req->fetchAll();
 			selectable: true,
 			selectHelper: true,
 			select: function(start, end) {
-				
+
 				$('#ModalAdd #start').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
 				$('#ModalAdd #end').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
 				$('#ModalAdd').modal('show');
@@ -289,7 +289,7 @@ $events = $req->fetchAll();
 				}
 			request.send();
 			},
-	
+
 			eventRender: function(event, element) {
 				element.bind('dblclick', function() {
 					$('#ModalEdit #id').val(event.id);
@@ -310,8 +310,8 @@ $events = $req->fetchAll();
 
 			},
 			events: [
-			<?php foreach($events as $event): 
-			
+			<?php foreach($events as $event):
+
 				$start = explode(" ", $event['start']);
 				$end = explode(" ", $event['end']);
 				if($start[1] == '00:00:00'){
@@ -336,7 +336,7 @@ $events = $req->fetchAll();
 			<?php endforeach; ?>
 			]
 		});
-		
+
 		function edit(event){
 			start = event.start.format('YYYY-MM-DD HH:mm:ss');
 			if(event.end){
@@ -344,14 +344,14 @@ $events = $req->fetchAll();
 			}else{
 				end = start;
 			}
-			
+
 			id =  event.id;
-			
+
 			Event = [];
 			Event[0] = id;
 			Event[1] = start;
 			Event[2] = end;
-			
+
 			$.ajax({
 			 url: 'editEventDate.php',
 			 type: "POST",
@@ -360,12 +360,12 @@ $events = $req->fetchAll();
 					if(rep == 'OK'){
 						alert('Saved');
 					}else{
-						alert('Could not be saved. try again.'); 
+						alert('Could not be saved. try again.');
 					}
 				}
 			});
 		}
-		
+
 	});
 
 </script>
