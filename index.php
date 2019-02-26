@@ -44,17 +44,17 @@ $events = $req->fetchAll();
 
 .label-on {
     border-radius: 3px;
-    background: red;
+    background: Красный;
     color: #ffffff;
     padding: 10px;
-    border: 1px solid red;
+    border: 1px solid Красный;
     display: table-cell;
 }
 
 .label-off {
     border-radius: 3px;
     background: white;
-    border: 1px solid red;
+    border: 1px solid Красный;
     padding: 10px;
     display: table-cell;
 }
@@ -83,7 +83,7 @@ $events = $req->fetchAll();
         <div class="row">
             <div class="col-lg-12 text-center">
 			<div style="height:20px"></div>
-                <div id="calendar" class="col-centered">
+                <div id="calendar" class="col-centeКрасный">
                 </div>
             </div>
 			
@@ -104,25 +104,25 @@ $events = $req->fetchAll();
 				  <div class="form-group">
 					<label for="title" class="col-sm-2 control-label">скидка</label>
 					<div class="col-sm-10">
-					  <input type="text" name="title" class="form-control" id="title" placeholder="Title">
+					  <input type="text" name="title" class="form-control" id="title" placeholder="размер скидки %">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="description" class="col-sm-2 control-label">услуга</label>
 					<div class="col-sm-10">
-					  <input type="text" name="description" class="form-control" id="description" placeholder="Description">
+					  <input type="text" name="description" class="form-control" id="description" placeholder="описание">
 					</div>
 				  </div>
 				  <div class="form-group">
 					<label for="color" class="col-sm-2 control-label">выделить</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; Dark blue</option>
-						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Turquoise</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Green</option>						  
-						  <option style="color:#FFD700;" value="#FFD700">&#9724; Yellow</option>
-						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Orange</option>
-						  <option style="color:#FF0000;" value="#FF0000">&#9724; Red</option>
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; темно-синий</option>
+						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый</option>						  
+						  <option style="color:#FFD700;" value="#FFD700">&#9724; Зеленый</option>
+						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Оранжевый</option>
+						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
 						  <option style="color:#000;" value="#000">&#9724; Black</option>
 						  
 						</select>
@@ -182,13 +182,13 @@ $events = $req->fetchAll();
 					<label for="color" class="col-sm-2 control-label">Color</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-						  <option style="color:#0071c5;" value="#0071c5">&#9724; Dark blue</option>
-						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Turquoise</option>
-						  <option style="color:#008000;" value="#008000">&#9724; Green</option>						  
-						  <option style="color:#FFD700;" value="#FFD700">&#9724; Yellow</option>
-						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; Orange</option>
-						  <option style="color:#FF0000;" value="#FF0000">&#9724; Red</option>
-						  <option style="color:#000;" value="#000">&#9724; Black</option>
+						  <option style="color:#0071c5;" value="#0071c5">&#9724; темно-синий</option>
+						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Бирюзовый</option>
+						  <option style="color:#008000;" value="#008000">&#9724; Зеленый </option>						  
+						  <option style="color:#FFD700;" value="#FFD700">&#9724; Желтый</option>
+						  <option style="color:#FF8C00;" value="#FF8C00">&#9724; оранжевый</option>
+						  <option style="color:#FF0000;" value="#FF0000">&#9724; Красный</option>
+						  <option style="color:#000;" value="#000">&#9724; черный</option>
 						  
 						</select>
 					</div>
